@@ -1,0 +1,146 @@
+.header {
+    @media (max-width: 650px) {
+        padding: 15px 0;
+    }
+
+    a {
+        color: black;
+        transition: .3s all ease;
+
+        &:hover {
+            color: rgb(238, 69, 69);
+        }
+    }
+
+    padding: 30px 0;
+
+    &_top {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 650px) {
+            justify-content: flex-end;
+            padding: 10px 0 0 0;
+        }
+
+        @media (max-width: 500px) {
+            justify-content: flex-end;
+            padding: 0;
+        }
+
+    }
+
+    &_bot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: -12px 0 0 0;
+
+        @media (max-width: 500px) {
+            margin: -32px 0 0 0;
+        }
+    }
+
+    &_menu {
+        display: flex;
+
+        a {
+            font-size: 14px;
+            font-family: 'Akzidenz';
+
+
+
+
+            @media (max-width: 888px) {
+                font-size: 12px;
+            }
+        }
+
+        &:first-child {
+            a {
+                margin: 0 25px 0 0;
+
+                @media (max-width: 888px) {
+                    margin: 0 15px 0 0;
+                }
+            }
+        }
+
+        &:last-child {
+            a {
+                margin: 0 0px 0px 25px;
+
+                @media (max-width: 888px) {
+                    margin: 0 0px 0 15px;
+                }
+            }
+        }
+    }
+
+    &_logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            @media (max-width: 888px) {
+                height: 40px;
+            }
+
+            @media (max-width: 650px) {
+                height: 30px;
+            }
+        }
+
+        @media (max-width: 650px) {
+            margin: 0 auto;
+        }
+    }
+
+    &_logo_title {
+        font-family: 'Bebas';
+        font-size: 15px;
+
+        @media (max-width: 650px) {
+            font-size: 13px;
+        }
+
+        &:first-child {
+            margin: 0 0 10px 0;
+
+            @media (max-width: 888px) {
+                margin: 0px 0 8 0;
+            }
+        }
+
+        &:last-child {
+            margin: 20px 0 0px 0;
+
+            @media (max-width: 888px) {
+                margin: 12px 0 0 0;
+            }
+        }
+    }
+
+
+    .lang_list {
+        display: flex;
+
+        & a {
+            margin: 0 15px 0 0;
+            font-family: 'Bebas';
+            font-size: 16px;
+        }
+    }
+
+    .ordering_online {
+        text-decoration: underline;
+
+        @media (max-width: 500px) {
+            text-align: right;
+            max-width: 100px;
+            line-height: 20px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.footer {
+    .footer_row {
+        padding: 25px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer_col-text {
+        font-family: "PT Sans";
+        font-size: 15px;
+        letter-spacing: 0.6px;
+
+        span {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .footer {
+        .footer_row {
+            flex-wrap: wrap;
+            padding: 15px 0;
+
+            .footer_col {
+                flex: 0 0 100%;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    height: 25px;
+                }
+            }
+        }
+
+        .footer_col-text {
+            margin: 0 0 10px 0;
+            font-size: 12px;
+        }
+    }
+}
